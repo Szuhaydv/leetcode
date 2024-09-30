@@ -1,8 +1,9 @@
 # Canonical solution creates empty list and adds nodes one by one
-# (probably easier as we don't know to think about which list append the other)
+# (probably simpler as we don't need to find starting point or do value checks)
 
 # I had easier time thinkig about finding the smaller starting point (if exists)
-# And then adding elements of the other list if they belong
+# And then adding elements of the other list if they belong between
+# the smaller list's current and next element
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         # ensure both lists have starting value
